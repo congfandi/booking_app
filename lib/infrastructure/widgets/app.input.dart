@@ -22,7 +22,7 @@ class AppInput extends StatelessWidget {
             ),
           ),
           labelText: label,
-          suffix: suffix,
+          suffixIcon: suffix
         ),
         style: TextStyles.componentsMedium,
       ),
