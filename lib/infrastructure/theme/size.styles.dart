@@ -57,6 +57,78 @@ class SizeStyles {
 
   double get width30 => 30.0.w;
 
+  double get width32 => 32.0.w;
+
+  double get width34 => 34.0.w;
+
+  double get width36 => 36.0.w;
+
+  double get width38 => 38.0.w;
+
+  double get width40 => 40.0.w;
+
+  double get width42 => 42.0.w;
+
+  double get width44 => 44.0.w;
+
+  double get width46 => 46.0.w;
+
+  double get width48 => 48.0.w;
+
+  double get width50 => 50.0.w;
+
+  double get width52 => 52.0.w;
+
+  double get width54 => 54.0.w;
+
+  double get width56 => 56.0.w;
+
+  double get width58 => 58.0.w;
+
+  double get width60 => 60.0.w;
+
+  double get width62 => 62.0.w;
+
+  double get width64 => 64.0.w;
+
+  double get width66 => 66.0.w;
+
+  double get width68 => 68.0.w;
+
+  double get width70 => 70.0.w;
+
+  double get width72 => 72.0.w;
+
+  double get width74 => 74.0.w;
+
+  double get width76 => 76.0.w;
+
+  double get width78 => 78.0.w;
+
+  double get width80 => 80.0.w;
+
+  double get width82 => 82.0.w;
+
+  double get width84 => 84.0.w;
+
+  double get width86 => 86.0.w;
+
+  double get width88 => 88.0.w;
+
+  double get width90 => 90.0.w;
+
+  double get width92 => 92.0.w;
+
+  double get width94 => 94.0.w;
+
+  double get width96 => 96.0.w;
+
+  double get width98 => 98.0.w;
+
+  double get width100 => 100.0.w;
+
+
+
   // HEIGHT CONFIG
   double get height2 => 2.0.h;
 
@@ -87,4 +159,81 @@ class SizeStyles {
   double get height28 => 28.0.h;
 
   double get height30 => 30.0.h;
+
+  double get height32 => 32.0.h;
+
+  double get height34 => 34.0.h;
+
+  double get height36 => 36.0.h;
+
+  double get height38 => 38.0.h;
+
+  double get height40 => 40.0.h;
+
+  double get height42 => 42.0.h;
+
+  double get height44 => 44.0.h;
+
+  double get height46 => 46.0.h;
+
+  double get height48 => 48.0.h;
+
+  double get height50 => 50.0.h;
+
+  double get height52 => 52.0.h;
+
+  double get height54 => 54.0.h;
+
+  double get height56 => 56.0.h;
+
+  double get height58 => 58.0.h;
+
+  double get height60 => 60.0.h;
+
+  double get height62 => 62.0.h;
+
+  double get height64 => 64.0.h;
+
+  double get height66 => 66.0.h;
+
+  double get height68 => 68.0.h;
+
+  double get height70 => 70.0.h;
+
+  double get height72 => 72.0.h;
+
+  double get height74 => 74.0.h;
+
+  double get height76 => 76.0.h;
+
+  double get height78 => 78.0.h;
+
+  double get height80 => 80.0.h;
+
+  double get height82 => 82.0.h;
+
+  double get height84 => 84.0.h;
+
+  double get height86 => 86.0.h;
+
+  double get height88 => 88.0.h;
+
+  double get height90 => 90.0.h;
+
+  double get height92 => 92.0.h;
+
+  double get height94 => 94.0.h;
+
+  double get height96 => 96.0.h;
+
+  double get height98 => 98.0.h;
+
+  double get height100 => 100.0.h;
+
+  double get height102 => 102.0.h;
+
+  double get height104 => 104.0.h;
+
+  double get height106 => 106.0.h;
+
 }
