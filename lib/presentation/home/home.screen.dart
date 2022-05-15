@@ -1,4 +1,6 @@
 import 'package:booking_app/infrastructure/widgets/app.input.dart';
+import 'package:booking_app/infrastructure/widgets/category.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -18,11 +20,12 @@ class HomeScreen extends GetView<HomeController> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children: const [
-            AppInput(
+          children:  [
+            const AppInput(
               label: 'Login',
               suffix: Icon(Icons.person),
             ),
+           CategoryEvent(onTap: (){}, title: "Caracter")
           ],
         ),
       ),
