@@ -1,0 +1,33 @@
+name: booking_app
+version: 1.0.0+1
+publish_to: none
+description: The Ngoding Flutter tutorial
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.3
+  flutter_screenutil: ^5.5.2
+  flutter: 
+    sdk: flutter
+
+dev_dependencies: 
+  flutter_lints: ^1.0.0
+  flutter_test: 
+    sdk: flutter
+
+
+flutter:
+  assets:
+    - assets/images/
+  fonts:
+    - family: 'Poppins'
+      fonts:
+        - asset: 'assets/fonts/Poppins-Regular.ttf'
+        - asset: 'assets/fonts/Poppins-Medium.ttf'
+          weight: 600
+        - asset: 'assets/fonts/Poppins-Bold.ttf'
+          weight: 700
+  uses-material-design: true
+

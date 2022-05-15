@@ -1,0 +1,11 @@
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/detail_trips.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/discover.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/favorite.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/home.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/login.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/onboarding.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/profile.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/register.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/setting.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/trips.controller.binding.dart'; 
+export 'package:booking_app/infrastructure/navigation/bindings/controllers/welcome.controller.binding.dart'; 

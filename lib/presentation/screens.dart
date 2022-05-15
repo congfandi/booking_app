@@ -1,0 +1,11 @@
+export 'package:booking_app/presentation/discover/discover.screen.dart';
+export 'package:booking_app/presentation/discover/favorite/favorite.screen.dart';
+export 'package:booking_app/presentation/discover/profile/profile.screen.dart';
+export 'package:booking_app/presentation/discover/setting/setting.screen.dart';
+export 'package:booking_app/presentation/discover/trips/detail.trips/detail_trips.screen.dart';
+export 'package:booking_app/presentation/discover/trips/trips.screen.dart';
+export 'package:booking_app/presentation/home/home.screen.dart';
+export 'package:booking_app/presentation/onboarding/onboarding.screen.dart';
+export 'package:booking_app/presentation/welcome/login/login.screen.dart';
+export 'package:booking_app/presentation/welcome/register/register.screen.dart';
+export 'package:booking_app/presentation/welcome/welcome.screen.dart';
