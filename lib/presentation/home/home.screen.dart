@@ -1,3 +1,4 @@
+import 'package:booking_app/infrastructure/widgets/app.input.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -5,6 +6,8 @@ import 'package:get/get.dart';
 import 'controllers/home.controller.dart';
 
 class HomeScreen extends GetView<HomeController> {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,10 +15,15 @@ class HomeScreen extends GetView<HomeController> {
         title: Text('HomeScreen'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          'HomeScreen is working',
-          style: TextStyle(fontSize: 20),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: const [
+            AppInput(
+              label: 'Login',
+              suffix: Icon(Icons.person),
+            ),
+          ],
         ),
       ),
     );

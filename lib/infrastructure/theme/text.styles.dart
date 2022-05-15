@@ -34,10 +34,10 @@ class TextStyles {
   static const TextStyle paragraphSmallBold = TextStyle(
       fontWeight: FontWeight.w700, fontSize: 12, fontStyle: FontStyle.normal);
 
-  static const TextStyle buttonLarge = TextStyle(
+  static const TextStyle componentsLarge = TextStyle(
       fontWeight: FontWeight.w600, fontSize: 24, fontStyle: FontStyle.normal);
-  static const TextStyle buttonMedium = TextStyle(
+  static const TextStyle componentsMedium = TextStyle(
       fontWeight: FontWeight.w600, fontSize: 14, fontStyle: FontStyle.normal);
-  static const TextStyle buttonSmall = TextStyle(
+  static const TextStyle componentsSmall = TextStyle(
       fontWeight: FontWeight.w600, fontSize: 12, fontStyle: FontStyle.normal);
 }
