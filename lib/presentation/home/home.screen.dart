@@ -1,3 +1,4 @@
+import 'package:booking_app/infrastructure/widgets/primary.button.dart';
 import 'package:booking_app/infrastructure/widgets/app.input.dart';
 import 'package:booking_app/infrastructure/widgets/category.dart';
 import 'package:flutter/foundation.dart';
@@ -20,12 +21,15 @@ class HomeScreen extends GetView<HomeController> {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
-          children:  [
+          children: [
             const AppInput(
               label: 'Login',
               suffix: Icon(Icons.person),
             ),
-           CategoryEvent(onTap: (){}, title: "Caracter")
+            CategoryEvent(onTap: () {}, title: "Caracter"),
+            PrimaryButton(buttonText: "Download",onPressed: (){}).primary01,
+            PrimaryButton(buttonText: "Download",onPressed: (){}).primary02,
+            PrimaryButton(buttonText: "Download",onPressed: (){}).primary03,
           ],
         ),
       ),

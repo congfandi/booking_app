@@ -13,7 +13,7 @@ class CategoryEvent extends StatelessWidget {
       height: SizeStyles.height30,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(4),
-        color: ColourStyles.ink["04"],
+        color: ColourStyles.ink04,
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -28,7 +28,7 @@ class CategoryEvent extends StatelessWidget {
             onTap: () => onTap(),
             child: Icon(
               Icons.clear,
-              color: ColourStyles.ink["02"],
+              color: ColourStyles.ink02,
               size: SizeStyles.width10,
             ),
           ),

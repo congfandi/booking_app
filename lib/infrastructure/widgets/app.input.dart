@@ -17,7 +17,7 @@ class AppInput extends StatelessWidget {
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(SizeStyles.width4),
             borderSide: BorderSide(
-              color: ColourStyles.ink["03"]!,
+              color: ColourStyles.ink03,
               width: SizeStyles.width2,
             ),
           ),
