@@ -1,6 +1,7 @@
 import 'package:booking_app/infrastructure/widgets/primary.button.dart';
 import 'package:booking_app/infrastructure/widgets/app.input.dart';
 import 'package:booking_app/infrastructure/widgets/category.dart';
+import 'package:booking_app/infrastructure/widgets/secondary.button.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -27,9 +28,12 @@ class HomeScreen extends GetView<HomeController> {
               suffix: Icon(Icons.person),
             ),
             CategoryEvent(onTap: () {}, title: "Caracter"),
-            PrimaryButton(buttonText: "Download",onPressed: (){}).primary01,
-            PrimaryButton(buttonText: "Download",onPressed: (){}).primary02,
-            PrimaryButton(buttonText: "Download",onPressed: (){}).primary03,
+            PrimaryButton(buttonText: "Download", onPressed: () {}).type1,
+            PrimaryButton(buttonText: "Download", onPressed: () {}).type2,
+            PrimaryButton(buttonText: "Download", onPressed: () {}).type3,
+            SecondaryButton(buttonText: "Download", onPressed: () {}).type1,
+            SecondaryButton(buttonText: "Download", onPressed: () {}).type2,
+            SecondaryButton(buttonText: "Download", onPressed: () {}).type3,
           ],
         ),
       ),

@@ -11,7 +11,7 @@ class PrimaryButton {
       required this.buttonText,
       this.onPressed});
 
-  Widget get primary01 => ElevatedButton(
+  Widget get type1 => ElevatedButton(
         onPressed: onPressed,
         child: Text(
           buttonText,
@@ -35,7 +35,7 @@ class PrimaryButton {
         ),
       );
 
-  Widget get primary02 => ElevatedButton(
+  Widget get type2 => ElevatedButton(
         onPressed: onPressed,
         child: Text(
           buttonText,
@@ -60,7 +60,7 @@ class PrimaryButton {
         ),
       );
 
-  Widget get primary03 => ElevatedButton(
+  Widget get type3 => ElevatedButton(
         onPressed: onPressed,
         child: Text(
           buttonText,
