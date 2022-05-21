@@ -34,6 +34,15 @@ class HomeScreen extends GetView<HomeController> {
             SecondaryButton(buttonText: "Download", onPressed: () {}).type1,
             SecondaryButton(buttonText: "Download", onPressed: () {}).type2,
             SecondaryButton(buttonText: "Download", onPressed: () {}).type3,
+            PrimaryButton(
+              buttonText: "Disable Small",
+            ).type1,
+            PrimaryButton(
+              buttonText: "Disabled Button",
+            ).type2,
+            PrimaryButton(
+              buttonText: "Disabled Large",
+            ).type3,
           ],
         ),
       ),

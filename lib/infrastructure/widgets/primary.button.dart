@@ -15,10 +15,13 @@ class PrimaryButton {
         onPressed: onPressed,
         child: Text(
           buttonText,
-          style: TextStyles.componentsSmall.copyWith(color: ColourStyles.ink06),
+          style: TextStyles.componentsSmall.copyWith(
+              color:
+                  onPressed == null ? ColourStyles.ink02 : ColourStyles.ink06),
         ),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(buttonColor),
+          backgroundColor: MaterialStateProperty.all(
+              onPressed == null ? ColourStyles.ink04 : buttonColor),
           padding: MaterialStateProperty.all(
             EdgeInsets.only(
               right: SizeStyles.width8,
@@ -39,11 +42,13 @@ class PrimaryButton {
         onPressed: onPressed,
         child: Text(
           buttonText,
-          style:
-              TextStyles.componentsMedium.copyWith(color: ColourStyles.ink06),
+          style: TextStyles.componentsMedium.copyWith(
+              color:
+                  onPressed == null ? ColourStyles.ink02 : ColourStyles.ink06),
         ),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(buttonColor),
+          backgroundColor: MaterialStateProperty.all(
+              onPressed == null ? ColourStyles.ink04 : buttonColor),
           padding: MaterialStateProperty.all(
             EdgeInsets.only(
               right: SizeStyles.width12,
@@ -64,10 +69,13 @@ class PrimaryButton {
         onPressed: onPressed,
         child: Text(
           buttonText,
-          style: TextStyles.componentsLarge.copyWith(color: ColourStyles.ink06),
+          style: TextStyles.componentsLarge.copyWith(
+              color:
+                  onPressed == null ? ColourStyles.ink02 : ColourStyles.ink06),
         ),
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(buttonColor),
+          backgroundColor: MaterialStateProperty.all(
+              onPressed == null ? ColourStyles.ink04 : buttonColor),
           padding: MaterialStateProperty.all(
             EdgeInsets.only(
               right: SizeStyles.width16,
