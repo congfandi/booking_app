@@ -1,3 +1,4 @@
+import 'package:booking_app/infrastructure/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,7 +14,7 @@ void main() async {
 
 class Main extends StatelessWidget {
   final String initialRoute;
-  const Main(this.initialRoute);
+   const Main(this.initialRoute, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +22,12 @@ class Main extends StatelessWidget {
       designSize: const Size(375, 667),
       child: GetMaterialApp(
         initialRoute: initialRoute,
+        theme: ThemeData(
+          fontFamily: 'Poppins',
+          scaffoldBackgroundColor: ColourStyles.ink06,
+          backgroundColor: ColourStyles.ink04,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
         getPages: Nav.routes,
       ),
     );

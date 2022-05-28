@@ -2,7 +2,7 @@ import 'package:booking_app/infrastructure/widgets/primary.button.dart';
 import 'package:booking_app/infrastructure/widgets/app.input.dart';
 import 'package:booking_app/infrastructure/widgets/category.dart';
 import 'package:booking_app/infrastructure/widgets/secondary.button.dart';
-import 'package:flutter/foundation.dart';
+import 'package:booking_app/infrastructure/widgets/simple.tag.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -16,7 +16,7 @@ class HomeScreen extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeScreen'),
+        title: const Text('HomeScreen'),
         centerTitle: true,
       ),
       body: Padding(
@@ -43,6 +43,9 @@ class HomeScreen extends GetView<HomeController> {
             PrimaryButton(
               buttonText: "Disabled Large",
             ).type3,
+            const SimpleTag(
+              title: "#Mountains",
+            )
           ],
         ),
       ),
