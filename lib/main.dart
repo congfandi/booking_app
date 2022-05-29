@@ -1,3 +1,4 @@
+import 'package:booking_app/generated/locales.g.dart';
 import 'package:booking_app/infrastructure/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -22,6 +23,8 @@ class Main extends StatelessWidget {
       designSize: const Size(375, 667),
       child: GetMaterialApp(
         initialRoute: initialRoute,
+        locale: const Locale('en', 'US'),
+        translationsKeys: AppTranslation.translations,
         theme: ThemeData(
           fontFamily: 'Poppins',
           scaffoldBackgroundColor: ColourStyles.ink06,
