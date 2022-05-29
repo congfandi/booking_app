@@ -1,3 +1,4 @@
+import 'package:booking_app/generated/locales.g.dart';
 import 'package:booking_app/infrastructure/widgets/primary.button.dart';
 import 'package:booking_app/infrastructure/widgets/app.input.dart';
 import 'package:booking_app/infrastructure/widgets/category.dart';
@@ -27,8 +28,8 @@ class HomeScreen extends GetView<HomeController> {
               label: 'Login',
               suffix: Icon(Icons.person),
             ),
-            CategoryEvent(onTap: () {}, title: "Caracter"),
-            PrimaryButton(buttonText: "Download", onPressed: () {}).type1,
+            CategoryEvent(onTap: () {}, title: LocaleKeys.cariben.tr),
+            PrimaryButton(buttonText: LocaleKeys.unlimitedDownload.tr, onPressed: () {}).type1,
             PrimaryButton(buttonText: "Download", onPressed: () {}).type2,
             PrimaryButton(buttonText: "Download", onPressed: () {}).type3,
             SecondaryButton(buttonText: "Download", onPressed: () {}).type1,
