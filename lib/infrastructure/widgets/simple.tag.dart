@@ -5,8 +5,8 @@ class SimpleTag extends StatelessWidget {
   const SimpleTag(
       {Key? key,
       required this.title,
-      this.buttonColor = ColourStyles.ink01,
-      this.titleColor = ColourStyles.ink06,
+      this.buttonColor = ColorStyles.ink01,
+      this.titleColor = ColorStyles.ink06,
       this.onTap})
       : super(key: key);
   final String title;

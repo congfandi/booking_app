@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ColourStyles {
+class ColorStyles {
   static const ink01 = Color(0xFF191D21);
   static const ink02 = Color(0xFF656F77);
   static const ink03 = Color(0xFFACB8C2);

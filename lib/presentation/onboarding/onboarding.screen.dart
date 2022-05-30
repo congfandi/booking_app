@@ -1,3 +1,7 @@
+import 'package:booking_app/infrastructure/theme/theme.dart';
+import 'package:booking_app/presentation/onboarding/onboarding.button.dart';
+import 'package:booking_app/presentation/onboarding/onboarding.indicator.dart';
+import 'package:booking_app/presentation/onboarding/onboarding.swiping.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -5,18 +9,26 @@ import 'package:get/get.dart';
 import 'controllers/onboarding.controller.dart';
 
 class OnboardingScreen extends GetView<OnboardingController> {
+  const OnboardingScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ColorStyles.ink06,
       appBar: AppBar(
-        title: Text('OnboardingScreen'),
-        centerTitle: true,
+        backgroundColor: ColorStyles.ink06,
+        elevation: 0,
       ),
-      body: Center(
-        child: Text(
-          'OnboardingScreen is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const OnboardingSwiping(),
+          const OnboardingIndicator(),
+          const OnBoardingButton(),
+          SizedBox(
+            height: SizeStyles.height30,
+          )
+        ],
       ),
     );
   }

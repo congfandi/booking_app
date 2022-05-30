@@ -27,8 +27,9 @@ class Main extends StatelessWidget {
         translationsKeys: AppTranslation.translations,
         theme: ThemeData(
           fontFamily: 'Poppins',
-          scaffoldBackgroundColor: ColourStyles.ink06,
-          backgroundColor: ColourStyles.ink04,
+          primaryColor: ColorStyles.ink01,
+          scaffoldBackgroundColor: ColorStyles.ink06,
+          backgroundColor: ColorStyles.ink04,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         getPages: Nav.routes,

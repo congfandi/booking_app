@@ -1,7 +1,9 @@
+// ignore_for_file: constant_identifier_names
+
 class Routes {
   static Future<String> get initialRoute async {
     // TODO: implement method
-    return HOME;
+    return ONBOARDING;
   }
 
   static const DETAIL_TRIPS = '/detail-trips';

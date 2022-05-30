@@ -7,7 +7,7 @@ class PrimaryButton {
   final Function()? onPressed;
 
   PrimaryButton(
-      {this.buttonColor = ColourStyles.ink01,
+      {this.buttonColor = ColorStyles.ink01,
       required this.buttonText,
       this.onPressed});
 
@@ -17,11 +17,11 @@ class PrimaryButton {
           buttonText,
           style: TextStyles.componentsSmall.copyWith(
               color:
-                  onPressed == null ? ColourStyles.ink02 : ColourStyles.ink06),
+                  onPressed == null ? ColorStyles.ink02 : ColorStyles.ink06),
         ),
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(
-              onPressed == null ? ColourStyles.ink04 : buttonColor),
+              onPressed == null ? ColorStyles.ink04 : buttonColor),
           padding: MaterialStateProperty.all(
             EdgeInsets.only(
               right: SizeStyles.width8,
@@ -44,11 +44,11 @@ class PrimaryButton {
           buttonText,
           style: TextStyles.componentsMedium.copyWith(
               color:
-                  onPressed == null ? ColourStyles.ink02 : ColourStyles.ink06),
+                  onPressed == null ? ColorStyles.ink02 : ColorStyles.ink06),
         ),
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(
-              onPressed == null ? ColourStyles.ink04 : buttonColor),
+              onPressed == null ? ColorStyles.ink04 : buttonColor),
           padding: MaterialStateProperty.all(
             EdgeInsets.only(
               right: SizeStyles.width12,
@@ -71,11 +71,11 @@ class PrimaryButton {
           buttonText,
           style: TextStyles.componentsLarge.copyWith(
               color:
-                  onPressed == null ? ColourStyles.ink02 : ColourStyles.ink06),
+                  onPressed == null ? ColorStyles.ink02 : ColorStyles.ink06),
         ),
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(
-              onPressed == null ? ColourStyles.ink04 : buttonColor),
+              onPressed == null ? ColorStyles.ink04 : buttonColor),
           padding: MaterialStateProperty.all(
             EdgeInsets.only(
               right: SizeStyles.width16,
