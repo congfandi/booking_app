@@ -7,7 +7,7 @@ class SecondaryButton {
   final Function()? onPressed;
 
   SecondaryButton({
-    this.buttonColor = ColourStyles.ink01,
+    this.buttonColor = ColorStyles.ink01,
     required this.buttonText,
     this.onPressed,
   });

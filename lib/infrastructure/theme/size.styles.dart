@@ -2,6 +2,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SizeStyles {
   SizeStyles._();
+
   // FONT SIZE
   static double get h0 => 72.0.sp;
 
@@ -128,8 +129,6 @@ class SizeStyles {
 
   static double get width100 => 100.0.w;
 
-
-
   // HEIGHT CONFIG
   static double get height2 => 2.0.h;
 
@@ -237,4 +236,5 @@ class SizeStyles {
 
   static double get height106 => 106.0.h;
 
+  static double get height300 => 300.0.h;
 }
