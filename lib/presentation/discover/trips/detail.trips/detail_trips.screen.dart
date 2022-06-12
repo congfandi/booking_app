@@ -5,14 +5,16 @@ import 'package:get/get.dart';
 import 'controllers/detail_trips.controller.dart';
 
 class DetailTripsScreen extends GetView<DetailTripsController> {
+  const DetailTripsScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DetailTripsScreen'),
+        title: const Text('DetailTripsScreen'),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'DetailTripsScreen is working',
           style: TextStyle(fontSize: 20),

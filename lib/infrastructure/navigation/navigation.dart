@@ -9,7 +9,8 @@ import 'routes.dart';
 
 class EnvironmentsBadge extends StatelessWidget {
   final Widget child;
-  const EnvironmentsBadge({required this.child});
+   // ignore: use_key_in_widget_constructors
+   const EnvironmentsBadge({required this.child});
   @override
   Widget build(BuildContext context) {
     var env = ConfigEnvironments.getEnvironments()['env'];
@@ -33,52 +34,52 @@ class Nav {
     ),
     GetPage(
       name: Routes.ONBOARDING,
-      page: () => OnboardingScreen(),
+      page: () => const OnboardingScreen(),
       binding: OnboardingControllerBinding(),
     ),
     GetPage(
       name: Routes.WELCOME,
-      page: () => WelcomeScreen(),
+      page: () => const WelcomeScreen(),
       binding: WelcomeControllerBinding(),
     ),
     GetPage(
       name: Routes.LOGIN,
-      page: () => LoginScreen(),
+      page: () => const LoginScreen(),
       binding: LoginControllerBinding(),
     ),
     GetPage(
       name: Routes.REGISTER,
-      page: () => RegisterScreen(),
+      page: () => const RegisterScreen(),
       binding: RegisterControllerBinding(),
     ),
     GetPage(
       name: Routes.DISCOVER,
-      page: () => DiscoverScreen(),
+      page: () => const DiscoverScreen(),
       binding: DiscoverControllerBinding(),
     ),
     GetPage(
       name: Routes.TRIPS,
-      page: () => TripsScreen(),
+      page: () => const TripsScreen(),
       binding: TripsControllerBinding(),
     ),
     GetPage(
       name: Routes.PROFILE,
-      page: () => ProfileScreen(),
+      page: () => const ProfileScreen(),
       binding: ProfileControllerBinding(),
     ),
     GetPage(
       name: Routes.SETTING,
-      page: () => SettingScreen(),
+      page: () => const SettingScreen(),
       binding: SettingControllerBinding(),
     ),
     GetPage(
       name: Routes.DETAIL_TRIPS,
-      page: () => DetailTripsScreen(),
+      page: () => const DetailTripsScreen(),
       binding: DetailTripsControllerBinding(),
     ),
     GetPage(
       name: Routes.FAVORITE,
-      page: () => FavoriteScreen(),
+      page: () => const FavoriteScreen(),
       binding: FavoriteControllerBinding(),
     ),
   ];
