@@ -1,5 +1,6 @@
 import 'package:booking_app/generated/locales.g.dart';
 import 'package:booking_app/infrastructure/extention/extensions.dart';
+import 'package:booking_app/infrastructure/navigation/routes.dart';
 import 'package:booking_app/infrastructure/theme/theme.dart';
 import 'package:booking_app/infrastructure/widgets/app.input.dart';
 import 'package:booking_app/infrastructure/widgets/primary.button.dart';
@@ -28,14 +29,18 @@ class LoginForm extends GetView<LoginController> {
         AppInput(
             label: LocaleKeys.password.tr,
             suffix: GestureDetector(
-              onTap: () {},
+              onTap: () {
+
+              },
               child: const Icon(
                 Icons.lock,
                 color: ColorStyles.ink02,
               ),
             )),
         SizedBox(height: SizeStyles.height16),
-        PrimaryButton(buttonText: LocaleKeys.login.tr, onPressed: () {})
+        PrimaryButton(buttonText: LocaleKeys.login.tr, onPressed: () {
+          Get.offAllNamed(Routes.WELCOME);
+        })
             .type3
             .resize(Get.width, SizeStyles.height56),
       ],
