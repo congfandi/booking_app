@@ -1,9 +1,5 @@
 import 'package:booking_app/generated/locales.g.dart';
-import 'package:booking_app/infrastructure/widgets/primary.button.dart';
-import 'package:booking_app/infrastructure/widgets/app.input.dart';
-import 'package:booking_app/infrastructure/widgets/category.dart';
-import 'package:booking_app/infrastructure/widgets/secondary.button.dart';
-import 'package:booking_app/infrastructure/widgets/simple.tag.dart';
+import 'package:booking_app/infrastructure/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -16,40 +12,32 @@ class HomeScreen extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('HomeScreen'),
-        centerTitle: true,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            const AppInput(
-              label: 'Login',
-              suffix: Icon(Icons.person),
+      bottomNavigationBar: Obx(() {
+        return BottomNavigationBar(
+          items: [
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.location_on_rounded),
+              label: LocaleKeys.trips.tr,
             ),
-            CategoryEvent(onTap: () {}, title: LocaleKeys.cariben.tr),
-            PrimaryButton(buttonText: LocaleKeys.unlimitedDownload.tr, onPressed: () {}).type1,
-            PrimaryButton(buttonText: "Download", onPressed: () {}).type2,
-            PrimaryButton(buttonText: "Download", onPressed: () {}).type3,
-            SecondaryButton(buttonText: "Download", onPressed: () {}).type1,
-            SecondaryButton(buttonText: "Download", onPressed: () {}).type2,
-            SecondaryButton(buttonText: "Download", onPressed: () {}).type3,
-            PrimaryButton(
-              buttonText: "Disable Small",
-            ).type1,
-            PrimaryButton(
-              buttonText: "Disabled Button",
-            ).type2,
-            PrimaryButton(
-              buttonText: "Disabled Large",
-            ).type3,
-            const SimpleTag(
-              title: "#Mountains",
-            )
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.favorite),
+              label: LocaleKeys.profile.tr,
+            ),
+            BottomNavigationBarItem(
+              icon: const Icon(Icons.settings),
+              label: LocaleKeys.settings.tr,
+            ),
           ],
-        ),
-      ),
+          currentIndex: controller.currentPage.value,
+          onTap: controller.changePage,
+          selectedItemColor: ColorStyles.ink01,
+          unselectedItemColor: ColorStyles.ink03,
+          elevation: 0,
+          backgroundColor: ColorStyles.ink06,
+          type: BottomNavigationBarType.fixed,
+        );
+      }),
+      body: Obx(() => controller.pages[controller.currentPage.value]),
     );
   }
 }
